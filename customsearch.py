@@ -1,5 +1,5 @@
 #!/usr/bin/python2.7
-
+# -*- coding: utf-8 -*-
 
 
 """Simple command-line example for Custom Search.
@@ -17,8 +17,10 @@ def main():
     service = build("customsearch", "v1",
                   developerKey="AIzaSyBGCWOxtQZomkXAVSLmyg1XI_obyTe5P4E")
 
+    #q : query
+    #cx : search engine ID
     res = service.cse().list(
-        q='etudiant',
+        q='viagra',
         cx='006966613857663466729:qjigtwbyr7o',
         ).execute()
     pprint.pprint(res)
